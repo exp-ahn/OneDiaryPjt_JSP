@@ -1,0 +1,44 @@
+/* SECTION START */
+section {
+	width: 100%;
+	background-color: #fff;
+}
+
+section #section_wrap {
+	width: 900px;
+	margin: 0 auto;	
+}
+
+section #section_wrap .diary_search {
+	width: 100%;
+	margin: 0 auto;
+	padding: 100px 0;
+	text-align: center;
+}
+
+section #section_wrap .diary_search p {
+	font-weight: bold;
+	font-size: 1.1em;
+}
+
+section #section_wrap .diary_search table {
+	width: 100%;
+	border-collapse: collapse;;
+}
+
+section #section_wrap .diary_search table td {
+	padding: 7px;
+	border: 1px solid #dadada;
+}
+
+section #section_wrap .diary_search input {
+	width: 450px;
+	margin: 5px;
+	padding: 5px;
+}
+
+section #section_wrap .diary_search input[type="button"],
+section #section_wrap .diary_search input[type="reset"] {
+	width: 150px;
+}
+/* SECTION END */

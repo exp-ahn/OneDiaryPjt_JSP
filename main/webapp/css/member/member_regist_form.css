@@ -1,0 +1,30 @@
+/* SECTION START */
+section {
+	width: 100%;
+	background-color: #fff;
+}
+
+section #section_wrap {
+	width: 900px;
+	margin: 0 auto;	
+}
+
+section #section_wrap .article {
+	width: 100%;
+	margin: 0 auto;
+	padding: 100px 0;
+	text-align: center;
+}
+
+section #section_wrap .article input {
+	width: 350px;
+	margin: 5px;
+	padding: 5px;
+}
+
+section #section_wrap .article input[type="button"],
+section #section_wrap .article input[type="reset"] {
+	width: 150px;
+}
+
+/* SECTION END */

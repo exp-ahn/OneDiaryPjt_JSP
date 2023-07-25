@@ -1,0 +1,18 @@
+/* SECTION START */
+section {
+	width: 100%;
+	background-color: #fff;
+}
+
+section #section_wrap {
+	width: 900px;
+	margin: 0 auto;	
+}
+
+section #section_wrap .article {
+	width: 100%;
+	margin: 0 auto;
+	padding: 100px 0;
+	text-align: center;
+}
+/* SECTION END */

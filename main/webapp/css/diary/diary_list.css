@@ -1,0 +1,84 @@
+/* SECTION START */
+section {
+	width: 100%;
+	background-color: #fff;
+}
+
+section #section_wrap {
+	width: 900px;
+	margin: 0 auto;	
+}
+
+section #section_wrap .diary_regist {
+	width: 100%;
+	margin: 0 auto;
+	padding: 100px 0;
+	text-align: center;
+}
+
+section #section_wrap .diary_regist p {
+	font-weight: bold;
+	font-size: 1.1em;
+}
+
+section #section_wrap .diary_regist table {
+	width: 100%;
+	border-collapse: collapse;;
+}
+
+section #section_wrap .diary_regist table td {
+	padding: 7px;
+	border: 1px solid #dadada;
+}
+
+section #section_wrap .diary_regist input {
+	width: 450px;
+	margin: 5px;
+	padding: 5px;
+}
+
+section #section_wrap .diary_regist input[type="button"],
+section #section_wrap .diary_regist input[type="reset"] {
+	width: 150px;
+}
+
+section #section_wrap .diary_list {
+	width: 100%;
+	margin: 0 auto;
+	padding: 100px 0;
+	text-align: center;
+}
+
+section #section_wrap .diary_list p {
+	font-weight: bold;
+	font-size: 1.1em;
+}
+
+section #section_wrap .diary_list table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+section #section_wrap .diary_list table th,
+section #section_wrap .diary_list table td {
+	padding: 10px;
+	border: 1px solid #dadada;
+}
+
+section #section_wrap .diary_list table thead {
+	background-color: #f3f3f3;
+}
+
+section #section_wrap .diary_list table tbody tr:nth-child(2n-1) {
+	background-color: #fafafa;
+}
+
+section #section_wrap .diary_list table a.btn_modify {
+	display: inline-block;
+	padding: 5px 10px;
+	border: 1px solid #dadada;
+	background-color: #dfdfdf;
+	border-radius: 5px;
+}
+
+/* SECTION END */

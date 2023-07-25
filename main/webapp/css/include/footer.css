@@ -1,0 +1,13 @@
+/* FOOTER START */
+footer {
+	width:  100%;
+	background-color: #f5f5f5;
+}
+
+footer #footer_wrap {
+	width: 900px; height: 70px;
+	line-height: 70px;
+	margin: 0 auto;
+	text-align: center;
+}
+/* FOOTER END */
