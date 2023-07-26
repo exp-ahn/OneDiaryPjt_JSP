@@ -78,9 +78,6 @@ public class OneDiaryController extends HttpServlet {
 			
 			nextPage = "views/diary/diary_list.jsp";
 			
-			System.out.println("-0-----> " + nextPage);
-			
-			
 		}
 		
 		RequestDispatcher dispatcher = request.getRequestDispatcher(nextPage);

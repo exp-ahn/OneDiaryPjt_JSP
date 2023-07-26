@@ -4,11 +4,33 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+
+<%@ include file="../../views/include/title.jsp" %>
+
+<link href="./css/index.css" rel="stylesheet" type="text/css">
+
 </head>
 <body>
 
-	ADMIN HOME
+	<%@ include file="../../views/include/header.jsp" %>
+	
+	<%@ include file="./include/admin_nav.jsp" %>
+	
+	<section>
+		
+		<div id="section_wrap">
+		
+			<div class="article">
+			
+				One Diary Project Home. (ADMIN.ver)
+			
+			</div>
+		
+		</div>
+		
+	</section>
+	
+	<%@ include file="../../views/include/footer.jsp" %>
 
 </body>
 </html>

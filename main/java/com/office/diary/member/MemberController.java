@@ -105,6 +105,10 @@ public class MemberController extends HttpServlet {
 			
 			nextPage = "index.jsp";
 			
+		} else if (command.equals("/admin_index_form.mem")) {
+			System.out.println("[MemberController] /admin_index_form.mem");
+			
+			nextPage = "views/admin/index.jsp";
 		}
 		
 		RequestDispatcher requestDispatcher = request.getRequestDispatcher(nextPage);

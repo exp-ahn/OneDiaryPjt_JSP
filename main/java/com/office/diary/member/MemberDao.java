@@ -282,6 +282,49 @@ public class MemberDao extends DBDao implements IMemberDao {
 		return result;
 		
 	}
+
+	public MemberDto selectMemberDtoByNo(int m_no) {
+		System.out.println("[MemberDao] selectMemberDtoByNo()");
+		
+		Connection conn = null;
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+		MemberDto memberDto = new MemberDto();
+		
+		try {
+			Class.forName(DRIVER);
+			conn = DriverManager.getConnection(URL, USERID, USERPW);
+			
+			String sql = "select * from tbl_member where m_no = ?";
+			
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setInt(1, m_no);
+			
+			rs = pstmt.executeQuery();
+			while (rs.next()) {
+				memberDto.setM_no(rs.getInt("m_no"));
+				memberDto.setM_id(rs.getString("m_id"));
+				memberDto.setM_pw(rs.getString("m_pw"));
+				memberDto.setM_mail(rs.getString("m_mail"));
+				memberDto.setM_phone(rs.getString("m_phone"));
+				memberDto.setM_reg_date(rs.getString("m_reg_date"));
+				memberDto.setM_mod_date(rs.getString("m_mod_date"));
+			}
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				if (rs != null) rs.close();
+				if (pstmt != null) pstmt.close();
+				if (conn != null) conn.close();
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+		
+		return memberDto;
+	}
 	
 	
 

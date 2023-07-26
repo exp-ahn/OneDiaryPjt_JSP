@@ -48,7 +48,7 @@ public class MemberService implements IMemberService {
 			
 			HttpSession session = request.getSession();
 			session.setAttribute("logined_memberDto", logined_memberDto);
-			session.setMaxInactiveInterval(60 * 30);
+			session.setMaxInactiveInterval(60*30);
 			
 		} else {
 			System.out.println("MEMBER LOGIN FAIL!!");
@@ -94,8 +94,6 @@ public class MemberService implements IMemberService {
 			
 		} else {
 			System.out.println("MEMBER MODIFY FAIl!!");
-			
-			
 		}
 		
 		return result;
@@ -121,6 +119,17 @@ public class MemberService implements IMemberService {
 		}
 		
 		return result;
+		
+	}
+
+	public void selectMemberDtoByNo(HttpServletRequest request, HttpServletResponse response) {
+		System.out.println("[MemberService] selectMemberDtoByNo()");
+		
+		int m_no = Integer.parseInt(request.getParameter("m_no"));
+		
+		MemberDto memberDto = memberDao.selectMemberDtoByNo(m_no);
+		
+		request.setAttribute("memberDto", memberDto);
 		
 	}
 

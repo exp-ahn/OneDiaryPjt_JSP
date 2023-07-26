@@ -17,6 +17,8 @@
 			<a href="<%= request.getContextPath()%>/member_regist_form.mem">계정생성</a>
 			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 			<a href="<%= request.getContextPath()%>/member_login_form.mem">로그인</a>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="<%= request.getContextPath()%>/admin_index_form.mem">관리자 모드</a>
 		<%
 			} else {
 			
